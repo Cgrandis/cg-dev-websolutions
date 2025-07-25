@@ -41,6 +41,15 @@ module.exports = {
         'dark-base-200': '#031240',  // Dark mode subtle background
         'dark-base-content': '#FFFFFF', // Dark mode text
       },
+       animation: {
+        fadeInUp: 'fadeInUp 1s ease-out forwards',
+      },
+      keyframes: {
+        fadeInUp: {
+          'from': { opacity: 0, transform: 'translateY(20px)' },
+          'to': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],
