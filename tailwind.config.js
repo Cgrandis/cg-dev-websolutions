@@ -4,7 +4,6 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      // Your existing custom font family is preserved here
       fontFamily: {
         sans: [
           "Inter Tight",
@@ -24,7 +23,7 @@ module.exports = {
           "Noto Color Emoji",
         ],
       },
-      // The new color palette is added alongside it
+      
       colors: {
         'primary-dark': '#031240',
         'primary': '#0726D9',
@@ -32,14 +31,22 @@ module.exports = {
         'accent': '#3D9DF2',
         'accent-light': '#52C5F2',
         
-        // Semantic colors for easy theming
-        'base-100': '#FFFFFF',       // Light mode background
-        'base-200': '#F5F5F5',       // Light mode subtle background
-        'base-content': '#031240',   // Light mode text
+        'base-100': '#FFFFFF',       
+        'base-200': '#F5F5F5',       
+        'base-content': '#031240',   
         
-        'dark-base-100': '#020f3a',  // Dark mode background
-        'dark-base-200': '#031240',  // Dark mode subtle background
-        'dark-base-content': '#FFFFFF', // Dark mode text
+        'dark-base-100': '#020f3a',  
+        'dark-base-200': '#031240',  
+        'dark-base-content': '#FFFFFF', 
+
+        'legal-accent': '#D7F205',
+        'legal-accent-light': '#EAF205',
+        'legal-accent-dark': '#7D8C0B',
+        'legal-bg': '#0D0D0D',
+        'legal-bg-secondary': '#1A1A1A',
+        'legal-text': '#FFFFFF',
+        'legal-text-secondary': '#A6A6A6',
+
       },
        animation: {
         fadeInUp: 'fadeInUp 1s ease-out forwards',
