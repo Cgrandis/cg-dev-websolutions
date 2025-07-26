@@ -11,16 +11,18 @@ const ThemeSwitch = () => {
   useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return null;
+    return <div className="w-9 h-9 p-2 rounded-lg" />;
   }
+
+  const isDark = theme === "dark" || resolvedTheme === "dark";
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" || resolvedTheme === "dark" ? "light" : "dark")}
-      className="p-2 text-gray-800 dark:text-gray-200 bg-transparent dark:bg-black"
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      className="p-2 rounded-lg text-legal-text-secondary hover:bg-legal-bg-secondary hover:text-legal-accent transition-colors"
       aria-label="Toggle Dark Mode"
     >
-      {theme === "dark" || resolvedTheme === "dark" ? <AiOutlineSun size={20} /> : <AiOutlineMoon size={20} />}
+      {isDark ? <AiOutlineSun size={20} /> : <AiOutlineMoon size={20} />}
     </button>
   );
 };
