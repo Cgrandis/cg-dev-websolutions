@@ -23,7 +23,6 @@ module.exports = {
           "Noto Color Emoji",
         ],
       },
-      
       colors: {
         'primary-dark': '#031240',
         'primary': '#0726D9',
@@ -46,15 +45,24 @@ module.exports = {
         'legal-bg-secondary': '#1A1A1A',
         'legal-text': '#FFFFFF',
         'legal-text-secondary': '#A6A6A6',
-
       },
-       animation: {
+      animation: {
         fadeInUp: 'fadeInUp 1s ease-out forwards',
+        pulseBg: 'pulseBg 8s ease-in-out infinite',
+        marquee: 'marquee 80s linear infinite',
       },
       keyframes: {
         fadeInUp: {
           'from': { opacity: 0, transform: 'translateY(20px)' },
           'to': { opacity: 1, transform: 'translateY(0)' },
+        },
+        pulseBg: {
+          '0%, 100%': { opacity: 0.1 },
+          '50%': { opacity: 0.25 },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
     },

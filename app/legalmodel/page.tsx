@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import ImageWithText from "./components/ImageWithText";
+import Carousel from "./components/Carousel";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
         <Hero />
         <Features />
         <ImageWithText />
+        <Carousel />
       </main>
       <Footer />
     </div>
