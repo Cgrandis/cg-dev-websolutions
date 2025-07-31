@@ -39,10 +39,11 @@ export default function Hero() {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 
-          className="font-sans text-4xl tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl mb-8 bg-gradient-to-r from-accent to-primary text-transparent bg-clip-text pb-4 opacity-0 animate-fadeInUp"
+          className="font-sans text-4xl tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl mb-8 text-base-content dark:text-white pb-4 opacity-0 animate-fadeInUp"
         >
-          Dominate Search Rankings. Build with Next.js.
+          Are you looking for a <span className="bg-gradient-to-r from-accent to-primary text-transparent bg-clip-text">Landing Page</span>, <span className="bg-gradient-to-r from-accent to-primary text-transparent bg-clip-text">SaaS Application</span>, or <span className="bg-gradient-to-r from-accent to-primary text-transparent bg-clip-text">E-commerce Store</span>?
         </h1>
+        
         <p 
           className="max-w-3xl mx-auto text-lg sm:text-xl text-base-content dark:text-dark-base-content opacity-80 mb-10 font-light opacity-0 animate-fadeInUp"
           style={{ animationDelay: '0.2s' }}
