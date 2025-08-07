@@ -19,7 +19,7 @@ const ThemeSwitch = () => {
   return (
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="p-2 rounded-lg text-legal-text-secondary hover:bg-legal-bg-secondary hover:text-legal-accent transition-colors"
+      className="p-2 rounded-lg text-plumber-text-dark dark:text-plumber-text-light hover:bg-gray-200 dark:hover:bg-plumber-primary/20 transition-colors"
       aria-label="Toggle Dark Mode"
     >
       {isDark ? <AiOutlineSun size={20} /> : <AiOutlineMoon size={20} />}

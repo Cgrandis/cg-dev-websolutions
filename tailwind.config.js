@@ -45,6 +45,14 @@ module.exports = {
         'legal-bg-secondary': '#1A1A1A',
         'legal-text': '#FFFFFF',
         'legal-text-secondary': '#A6A6A6',
+
+        'plumber-primary': '#0540F2',
+        'plumber-primary-light': '#0554F2',
+        'plumber-secondary': '#3D79F2',
+        'plumber-bg-light': '#E9F0F2',
+        'plumber-accent': '#DEF294',
+        'plumber-text-dark': '#021A40',
+        'plumber-text-light': '#FFFFFF',
       },
       animation: {
         fadeInUp: 'fadeInUp 1s ease-out forwards',
